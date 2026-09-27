@@ -1,7 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-size: 0.6875rem;
+    font-size: 18px;
     text-align: center;
     color: hsl(228,45%, 44%);
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+:root {
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    width:60%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 20px;
+    grid-template-areas:
+        "bloco1 bloco2 bloco2 bloco3"
+        "bloco1 bloco2 bloco2 bloco3"
+        "bloco1 bloco2 bloco2 bloco3"
+        "bloco1 bloco2 bloco2 bloco3"
+        "bloco1 bloco4 bloco5 bloco3"
+        "bloco6 bloco4 bloco5 bloco3"
+        "bloco6 bloco4 bloco5 bloco3"
+        "bloco6 bloco7 bloco8 bloco8"
+        "bloco6 bloco7 bloco8 bloco8"
+        "bloco6 bloco7 bloco8 bloco8"
+    ;
+}
+
+div {
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+/* Estilização bloco 1*/
+.bloco1 {
+    grid-area: bloco1;
+    background-color: var(--Yellow-100);
+    padding: 40px 20px;
+    box-shadow: 5px 10px 20px hsl(33, 97%, 77%);
+
+}
+.bloco1 h2, .bloco1 span {
+    text-align: left;
+    font-size: 1.3rem;   
+    font-weight: 600;
+    line-height: 1;
+}
+
+.bloco1 span {
+    color: var(--Purple-500);
+    font-style: italic;
+}
+
+.bloco1 h2 {
+    color: var(--Black);
+}
+
+.bloco1 img {
+    height: 60px;
+    margin-top: 15px;
+    position: relative;
+}
+
+/* Estilização bloco 2*/
+.bloco2 {
+    grid-area: bloco2;
+    padding: 30px 40px;
+    background-color: var(--Purple-500);
+    box-shadow: 5px 10px 20px hsl(256, 67%, 50%)
+}
+
+.bloco2 h1, .bloco2 span {
+    font-size: 2.3rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--White);
+}
+
+.bloco2 span {
+    color: var(--Yellow-500);
+}
+
+.bloco2 .italico {
+    color: var(--White);
+    font-style: italic;
+}
+
+.bloco2 img {
+    height: 20px;
+    margin-top: 20px;
+}
+
+.bloco2 p {
+    font-size: 0.65rem;
+    font-weight: lighter;
+    color: var(--White);
+}
+
+/* Estilização bloco 3*/
+.bloco3 {
+    grid-area: bloco3;
+    padding: 20px 30px 0 25px;
+    background-color: var(--Purple-100);
+    box-shadow: 5px 10px 20px hsl(255, 88%, 77%);
+    overflow: hidden;
+}
+
+.bloco3 h2 {
+    text-align:left ;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--Black);
+}
+
+.bloco3 img {
+    height: 60%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.bloco3 p{
+    font-size: .65rem;
+    line-height: 1.1;
+    text-align: left;
+    color: var(--Black);
+    margin-top: 5px;
+}
+
+/* Estilização bloco 4*/
+.bloco4 {
+    grid-area: bloco4;
+    padding: 10px 30px 0 12px;
+    background-color: var(--White);
+    box-shadow: 5px 10px 20px hsl(0, 0%, 55%);
+    overflow: hidden;
+}
+
+.bloco4 img{
+    height: 34%;
+}
+
+.bloco4 h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: .9;
+    color:var(--Black);
+}
+
+/* Estilização bloco 5*/
+.bloco5 {
+    grid-area: bloco5;
+    padding: 10px 20px 0 15px;
+    background-color: var(--Yellow-500);
+    box-shadow: 5px 10px 20px hsl(39, 100%, 27%);;
+    overflow: hidden;
+}
+
+.bloco5 h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 0.9;
+    color: var(--Black);
+}
+
+.bloco5 img {
+    height: 80%;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* Estilização bloco 6*/
+.bloco6 {
+    grid-area: bloco6;
+    padding: 20px 40px 0 20px;
+    background-color: var(--Yellow-500);
+    overflow: hidden;
+}
+
+.bloco6 h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: left;
+    line-height: 1;
+    color: var(--Black);
+}
+
+.bloco6 img {
+    height: 60%;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.bloco7 {
+    grid-area: bloco7;
+    background-color: var(--White);
+}
+.bloco8 {
+    grid-area: bloco8;
 }
