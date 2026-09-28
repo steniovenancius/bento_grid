@@ -250,7 +250,7 @@ footer a:hover {
     color: var(--Yellow-500);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 1000px){
     body {
         width: 100vw;
         height: 100vh;
