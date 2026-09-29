@@ -22,7 +22,7 @@
 }
 
 body {
-    width: 100vw;
+    width: 1440px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -32,11 +32,11 @@ body {
 }
 
 main {
-    width:60%;
+    width:50%;
     height: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(10,1fr);
     grid-gap: 20px;
     grid-template-areas:
         "bloco1 bloco2 bloco2 bloco3"
@@ -60,7 +60,7 @@ div {
 .bloco1 {
     grid-area: bloco1;
     background-color: var(--Yellow-100);
-    padding: 40px 20px;
+    padding: 50px 20px 0 15px;
 }
 .bloco1 h2, .bloco1 span {
     text-align: left;
@@ -84,11 +84,11 @@ div {
 /* Estilização bloco 2*/
 .bloco2 {
     grid-area: bloco2;
-    padding: 30px 40px;
+    padding: 40px 40px;
     background-color: var(--Purple-500);
 }
 .bloco2 h1, .bloco2 span {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 600;
     line-height: 1;
     color: var(--White);
@@ -113,13 +113,13 @@ div {
 /* Estilização bloco 3*/
 .bloco3 {
     grid-area: bloco3;
-    padding: 20px 30px 0 25px;
+    padding: 30px 30px 0 15px;
     background-color: var(--Purple-100);
     overflow: hidden;
 }
 .bloco3 h2 {
     text-align:left ;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600; 
     line-height: 1;
     color: var(--Black);
@@ -130,7 +130,7 @@ div {
     position: relative;
 }
 .bloco3 p{
-    font-size: .65rem;
+    font-size: .6rem;
     line-height: 1.1;
     text-align: left;
     color: var(--Black);
@@ -145,53 +145,53 @@ div {
     overflow: hidden;
 }
 .bloco4 img{
-    height: 34%;
+    height: 30%;
 }
 .bloco4 h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: left;
-    line-height: .9;
+    line-height: 1;
     color:var(--Black);
 }
 
 /* Estilização bloco 5*/
 .bloco5 {
     grid-area: bloco5;
-    padding: 10px 20px 0 15px;
+    padding: 20px 20px 0 15px;
     background-color: var(--Yellow-500);
     overflow: hidden;
 }
 .bloco5 h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     text-align: left;
     line-height: 0.9;
     color: var(--Black);
 }
 .bloco5 img {
-    height: 80%;
+    height: 70%;
     position: relative;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /* Estilização bloco 6*/
 .bloco6 {
     grid-area: bloco6;
-    padding: 20px 40px 0 20px;
+    padding: 20px 40px 0 15px;
     background-color: var(--Yellow-500);
     overflow: hidden;
 }
 .bloco6 h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
     text-align: left;
-    line-height: 1;
+    line-height: 1.1;
     color: var(--Black);
 }
 .bloco6 img {
-    height: 60%;
-    margin-top: 20px;
+    height: 55%;
+    margin-top: 30px;
     position: relative;
 }
 
@@ -202,19 +202,22 @@ div {
     background-color: var(--White);
 }
 .bloco7 h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 500;
     text-align: left;
+    color: var(--Black);
 }
 .bloco7 p {
-    font-size: .7rem;
+    font-size: .6rem;
     text-align: left;
+    margin-top: 5px;
+    color: var(--Black);
 }
 .bloco7 img {
     height: 30%;
     position: relative;
     right: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 /* Estilização bloco 8*/
@@ -230,7 +233,7 @@ div {
     height: 80%;
 }
 .bloco8 h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: left;
     line-height: 1;
     margin-left: 10px;
@@ -257,7 +260,9 @@ footer a:hover {
     }
     main {
         width: 90%;
+        margin-bottom: 20px;
         display: grid;
+        gap: 30px;
         grid-template-rows: initial;
         grid-template-columns: 100%;
         grid-template-areas: 
@@ -271,12 +276,15 @@ footer a:hover {
             "bloco6"
         ;
     }
+    div {
+        border-radius: 20px;
+    }
     /* Estilização bloco 2*/
     .bloco2 {
         padding: 20px 40px 0 40px;
     }
     .bloco2 h1, .bloco2 span{
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         font-weight: 400;
     }
     .bloco2 img {
@@ -289,12 +297,112 @@ footer a:hover {
     /* Estilização bloco 4*/
     .bloco4 {
         height: 130px;
+        padding-left: 20px;
     }
     .bloco4 h2 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     .bloco4 img {
         height: 65px;
+    }
+
+    /* Estilização bloco 5*/
+    .bloco5 {
+        height: 150px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .bloco5 h2 {
+        font-size: 1.4rem;
+    }
+    .bloco5 img {
+        height: 100%;
+    }
+
+    /* Estilização bloco 3*/
+    .bloco3{
+        height: 460px;
+    }
+    .bloco3 h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .bloco3 img {
+        height: 60%;
+        margin-top: 20px;
+        position: relative;
+        left: 5px;
+    }
+    .bloco3 p{
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Estilização bloco 8*/
+    .bloco8 {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        gap: 20px;
+        padding: 30px 50px;
+    }
+    .bloco8 img {
+        height: 60%;
+    }
+    .bloco8 h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Estilização bloco 7*/
+    .bloco7 {
+        height: 200px;
+        padding: 20px 20px;
+        text-align: left;
+    }
+    .bloco7 h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .bloco7 p {
+        font-size: 1.2rem;
+    }
+    .bloco7 img {
+        height: 40%;
+        position: relative;
+        left: 10px;
+    }
+
+    /* Estilização bloco 1*/
+    .bloco1 {
+        height: 200px;
+        padding: 30px;
+        text-align: left
+        ;
+    }
+    .bloco1 h2, .bloco1 span {
+        font-size: 1.8rem;
+    }
+    .bloco1 img {
+        height: 50%;
+        margin-top: 20px;
+    }
+
+    /* Estilização bloco 6*/
+    .bloco6 {
+        height: 380px;
+        padding: 40px 30px;
+        text-align: left;
+    }
+    .bloco6 h2 {
+        font-size: 1.8rem;
+    }
+    .bloco6 img {
+        height: 75%;
     }
     footer {
         display: none;
